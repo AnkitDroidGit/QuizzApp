@@ -24,10 +24,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let firstQuestion = questionBank.questionList[questionNumber]
-        questionLabel.text = firstQuestion.questionText
-        
+        nextQuestion()
     }
     
     
@@ -53,7 +50,7 @@ class ViewController: UIViewController {
         if questionNumber < questionBank.questionList.count {
             questionLabel.text = questionBank.questionList[questionNumber].questionText
         } else {
-            let alert = UIAlertController(title: "Awesome", message: "You have finished all the questions. Do you want to restart?", preferredStyle: .actionSheet)
+            let alert = UIAlertController(title: "Awesome", message: "You have finished all the questions. Do you want to restart?", preferredStyle: .alert)
             let alertAction = UIAlertAction(title: "Restart", style: .default, handler: {_ in
                 self.startOver()
             })

@@ -46,7 +46,7 @@ class ViewController: UIViewController {
 //        scoreLabel.text = String(score)
         scoreLabel.text = "Score: \(score)"
         progressLabel.text = "\(questionNumber + 1)/ \(questionBank.questionList.count)"
-    
+        progressBar.frame.size.width = (view.frame.size.width / 13) * CGFloat(questionNumber + 1)
     }
     
     

@@ -13,10 +13,11 @@
 		633646C91B8C657400FF45E2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 633646C71B8C657400FF45E2 /* LaunchScreen.xib */; };
 		ADEB04ED1FBDFEAA00026359 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 633646C21B8C657400FF45E2 /* Main.storyboard */; };
 		BCC8A9C9203965960031C39D /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8A9C8203965960031C39D /* Question.swift */; };
+		BCCFD556203A86B1006293BA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 633646BD1B8C657400FF45E2 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		633646B91B8C657400FF45E2 /* Quizzler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quizzler.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		633646B91B8C657400FF45E2 /* QuizzApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizzApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		633646BD1B8C657400FF45E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		633646BE1B8C657400FF45E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		633646C01B8C657400FF45E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,7 +41,7 @@
 		633646B01B8C657400FF45E2 = {
 			isa = PBXGroup;
 			children = (
-				633646BB1B8C657400FF45E2 /* Quizzler */,
+				633646BB1B8C657400FF45E2 /* QuizzApp */,
 				633646BA1B8C657400FF45E2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,12 +49,12 @@
 		633646BA1B8C657400FF45E2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				633646B91B8C657400FF45E2 /* Quizzler.app */,
+				633646B91B8C657400FF45E2 /* QuizzApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		633646BB1B8C657400FF45E2 /* Quizzler */ = {
+		633646BB1B8C657400FF45E2 /* QuizzApp */ = {
 			isa = PBXGroup;
 			children = (
 				EBB1C72D1B946C580011F5C3 /* Controller */,
@@ -61,7 +62,7 @@
 				EBB1C72B1B946C4B0011F5C3 /* View */,
 				633646BC1B8C657400FF45E2 /* Supporting Files */,
 			);
-			path = Quizzler;
+			path = QuizzApp;
 			sourceTree = "<group>";
 		};
 		633646BC1B8C657400FF45E2 /* Supporting Files */ = {
@@ -102,9 +103,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		633646B81B8C657400FF45E2 /* Quizzler */ = {
+		633646B81B8C657400FF45E2 /* QuizzApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 633646D81B8C657400FF45E2 /* Build configuration list for PBXNativeTarget "Quizzler" */;
+			buildConfigurationList = 633646D81B8C657400FF45E2 /* Build configuration list for PBXNativeTarget "QuizzApp" */;
 			buildPhases = (
 				633646B51B8C657400FF45E2 /* Sources */,
 				633646B61B8C657400FF45E2 /* Frameworks */,
@@ -114,9 +115,9 @@
 			);
 			dependencies = (
 			);
-			name = Quizzler;
+			name = QuizzApp;
 			productName = Quizzler;
-			productReference = 633646B91B8C657400FF45E2 /* Quizzler.app */;
+			productReference = 633646B91B8C657400FF45E2 /* QuizzApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -136,7 +137,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 633646B41B8C657400FF45E2 /* Build configuration list for PBXProject "Quizzler" */;
+			buildConfigurationList = 633646B41B8C657400FF45E2 /* Build configuration list for PBXProject "QuizzApp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -149,7 +150,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				633646B81B8C657400FF45E2 /* Quizzler */,
+				633646B81B8C657400FF45E2 /* QuizzApp */,
 			);
 		};
 /* End PBXProject section */
@@ -159,6 +160,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCCFD556203A86B1006293BA /* Info.plist in Resources */,
 				ADEB04ED1FBDFEAA00026359 /* Main.storyboard in Resources */,
 				633646C91B8C657400FF45E2 /* LaunchScreen.xib in Resources */,
 				633646C61B8C657400FF45E2 /* Images.xcassets in Resources */,
@@ -306,7 +308,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = Quizzler/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/QuizzApp/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.freeankit.Quizz-App";
@@ -326,7 +328,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = Quizzler/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/QuizzApp/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.freeankit.Quizz-App";
@@ -341,7 +343,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		633646B41B8C657400FF45E2 /* Build configuration list for PBXProject "Quizzler" */ = {
+		633646B41B8C657400FF45E2 /* Build configuration list for PBXProject "QuizzApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				633646D61B8C657400FF45E2 /* Debug */,
@@ -350,7 +352,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		633646D81B8C657400FF45E2 /* Build configuration list for PBXNativeTarget "Quizzler" */ = {
+		633646D81B8C657400FF45E2 /* Build configuration list for PBXNativeTarget "QuizzApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				633646D91B8C657400FF45E2 /* Debug */,

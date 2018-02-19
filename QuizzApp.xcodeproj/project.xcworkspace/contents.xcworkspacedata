@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Quizzler.xcodeproj">
+      location = "self:/Users/ankit/XcodeProjects/Downloaded/QuizzApp/QuizzApp.xcodeproj">
    </FileRef>
 </Workspace>

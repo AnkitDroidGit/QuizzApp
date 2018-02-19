@@ -53,10 +53,13 @@ class ViewController: UIViewController {
         if questionNumber < questionBank.questionList.count {
             questionLabel.text = questionBank.questionList[questionNumber].questionText
         } else {
-            let alert = UIAlertController(title: "End of Quizz", message: "Quizz ended", preferredStyle: .alert)
-            let alertAction = UIAlertAction(title: "Restart", style: .default, handler: { (<#UIAlertAction#>) in
+            let alert = UIAlertController(title: "Awesome", message: "You have finished all the questions. Do you want to restart?", preferredStyle: .actionSheet)
+            let alertAction = UIAlertAction(title: "Restart", style: .default, handler: {_ in
                 self.startOver()
             })
+            
+            alert.addAction(alertAction)
+            present(alert, animated: true, completion: nil)
         }
     }
     
@@ -70,7 +73,7 @@ class ViewController: UIViewController {
     
     
     func startOver() {
-        
+        questionNumber = 0
+        nextQuestion()
     }
-    
 }

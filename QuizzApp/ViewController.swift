@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     let questionBank = QuestionBank()
     var seletedAnswer : Bool = false
     var questionNumber : Int = 0
+    var score : Int = 0
     
     
     @IBOutlet weak var questionLabel: UILabel!
@@ -42,13 +43,16 @@ class ViewController: UIViewController {
     
     
     func updateUI() {
-        
+//        scoreLabel.text = String(score)
+        scoreLabel.text = "Score: \(score)"
+    
     }
     
     
     func nextQuestion() {
         if questionNumber < questionBank.questionList.count {
             questionLabel.text = questionBank.questionList[questionNumber].questionText
+            updateUI()
         } else {
             let alert = UIAlertController(title: "Awesome", message: "You have finished all the questions. Do you want to restart?", preferredStyle: .alert)
             let alertAction = UIAlertAction(title: "Restart", style: .default, handler: {_ in
@@ -64,7 +68,7 @@ class ViewController: UIViewController {
     func checkAnswer() {
         if questionNumber < questionBank.questionList.count &&
             seletedAnswer == questionBank.questionList[questionNumber].answer {
-            
+            score += 1
         }
     }
     
